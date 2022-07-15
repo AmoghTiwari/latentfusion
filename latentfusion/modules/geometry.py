@@ -2,7 +2,7 @@ import time
 
 import abc
 import torch
-from torch import nn
+from torch import nn, unsqueeze
 from torch.cuda.amp.autocast_mode import autocast
 from torch.nn import functional as F
 
@@ -308,6 +308,7 @@ class Camera(nn.Module, torchutils.Scatterable):
         """
         K = self.intrinsic
         T = self.translation_matrix
+        
         if zs is None:
             zs = T[:, 2, -1]
         fu = K[:, 0, 0]

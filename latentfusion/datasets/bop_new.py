@@ -71,7 +71,7 @@ class BOPDataset(Dataset):
         else:
             raise ValueError(f'Unknown dataset type {dataset_path.name}')
 
-        self.model_path = self.models_path / f'obj_{self.object_id:06d}.ply'
+        # self.model_path = self.models_path / f'obj_{self.object_id:06d}.ply'
         self.pointcloud_path = self.dataset_path / 'models_eval' / f'obj_{self.object_id:06d}.ply'
 
         models_info_path = self.dataset_path / 'models_eval' / 'models_info.json'
@@ -119,6 +119,7 @@ class BOPDataset(Dataset):
         assert len(self.depth_paths) == len(self.color_paths)
 
     def load_pointcloud(self):
+        return None
         obj = meshutils.Object3D(self.pointcloud_path)
         points = torch.tensor(obj.vertices, dtype=torch.float32)
         points = points * self.object_scale
@@ -168,7 +169,7 @@ class BOPDataset(Dataset):
         image = Image.open(path)
         new_shape = (int(image.width * self.image_scale), int(image.height * self.image_scale))
         image = image.resize(new_shape)
-        image = image.resize((480, 640))
+        image = image.resize((640,480))
         image = np.array(image)
         return image
 
@@ -176,7 +177,7 @@ class BOPDataset(Dataset):
         image = Image.open(path)
         new_shape = (int(image.width * self.image_scale), int(image.height * self.image_scale))
         image = image.resize(new_shape)
-        image = image.resize((480, 640))
+        image = image.resize((640,480))
         image = np.array(image, dtype=np.bool)
         if len(image.shape) > 2:
             image = image[:, :, 0]
@@ -186,7 +187,7 @@ class BOPDataset(Dataset):
         image = Image.open(path)
         new_shape = (int(image.width * self.image_scale), int(image.height * self.image_scale))
         image = image.resize(new_shape)
-        image = image.resize((480, 640))
+        image = image.resize((640, 480))
         image = np.array(image, dtype=np.float32)
         return image
 
@@ -231,12 +232,12 @@ class BOPDataset(Dataset):
         depth = torch.tensor(depth) * self.object_scale * self.depth_scales[idx]
 
         intrinsic = self.normalize_intrinsic(self.intrinsics[idx])
-        extrinsic = self.normalize_extrinsic(self.extrinsics[idx])
+        # extrinsic = self.normalize_extrinsic(self.extrinsics[idx])
 
         return {
             'color': color,
             'mask': mask,
             'depth': depth,
-            'extrinsic': extrinsic,
+            'extrinsic': self.extrinsics[idx],
             'intrinsic': intrinsic,
         }

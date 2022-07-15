@@ -40,7 +40,10 @@ def camera_metrics(camera_gt, camera_eval, points, scale_to_meters,
                 for c1, c2 in zip(tqdm(camera_gt), camera_eval)]
 
     camera_gt = camera_gt.clone().cpu()
+    print("Camera gt from latentfusion/pose/metrics.py", camera_gt.extrinsic)
     camera_eval = camera_eval.clone().cpu()
+    print("Camera eval from latentfusion/pose/metrics.py", camera_eval.extrinsic)
+
     rot_dist = camera_rotation_dist(camera_gt, camera_eval)
     trans_dist = camera_translation_dist(camera_gt, camera_eval) * scale_to_meters
 

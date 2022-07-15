@@ -19,7 +19,6 @@ from latentfusion.pose import initialization
 from latentfusion.pose import utils as pu
 from latentfusion.recon.inference import LatentFusionModel
 from latentfusion.utils import ExponentialScheduler, LinearScheduler
-from latentfusion.pose import camera_rotation_dist
 
 DEFAULT_TRANSLATION_STD = 0.01
 DEFAULT_QUATERION_STD = 10.0 / 180.0 * math.pi
@@ -332,10 +331,6 @@ class CrossEntropyPoseEstimator(PoseEstimator):
             camera_init = kwargs['cameras'][0]
         else:
             camera_init = self.initial_pose(target_obs)
-            print("from latentfusion/pose/estimation, camera_init: ", camera_init)
-            print("from latentfusion/pose/estimation, target_obs: ", target_obs)
-            print("from latentfusion/pose/estimation: Rotn dist", camera_rotation_dist(camera_init, target_obs.camera))
-            print("from latentfusion/pose/estimation: Rotn dist degrees", camera_rotation_dist(camera_init, target_obs.camera)*math.pi * 180)
             cameras = pu.sample_cameras_with_estimate(
                 n=self.num_gmm_components * self.num_samples,
                 camera_est=camera_init,
@@ -678,7 +673,7 @@ class GradientPoseEstimator(PoseEstimator):
                 converge_count = 0
 
             if converge_count >= self.converge_patience:
-                logger.info("convergence patience threshold reached", step=step, delta=delta,
+                logger.info("convergence threshold reached", step=step, delta=delta,
                             count=converge_count)
                 pbar.close()
                 break

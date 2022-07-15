@@ -77,6 +77,7 @@ def load_dataset(args):
         input_dataset = BOPDataset(args.dataset_dir, args.input_scene_dir, object_id=int(args.object_id))
         target_dataset = BOPDataset(args.dataset_dir, args.target_scene_dir, object_id=int(args.object_id))
         pointcloud = input_dataset.load_pointcloud()
+        print("PCD post read", pointcloud)
         object_scale_to_meters = 1.0 / (1000.0 * target_dataset.object_scale)
     elif args.dataset_type == 'moped':
         pointcloud_path = args.input_scene_dir / 'pointcloud_eval.ply'
