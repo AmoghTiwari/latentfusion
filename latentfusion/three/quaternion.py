@@ -372,7 +372,6 @@ def perturb(q, std):
 def angular_distance(q1, q2, eps: float = 1e-7):
     q1 = normalize(q1)
     q2 = normalize(q2)
-    print("from latentfusion/three/quaternion, q1, q2", q1, q2)
     dot = q1 @ q2.t()
     dist = 2 * core.acos_safe(dot.abs(), eps=eps)
     return dist

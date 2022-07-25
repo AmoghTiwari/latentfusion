@@ -48,7 +48,6 @@ class Object3D(object):
 
     def __init__(self, path, load_materials=False):
         scene = trimesh.load(str(path))
-        print("scene type", type(scene))
         if isinstance(scene, trimesh.Trimesh):
             scene = trimesh.Scene(scene)
         self.meshes: typing.List[trimesh.Trimesh] = list(scene.dump())

@@ -332,10 +332,6 @@ class CrossEntropyPoseEstimator(PoseEstimator):
             camera_init = kwargs['cameras'][0]
         else:
             camera_init = self.initial_pose(target_obs)
-            print("from latentfusion/pose/estimation, camera_init: ", camera_init)
-            print("from latentfusion/pose/estimation, target_obs: ", target_obs)
-            print("from latentfusion/pose/estimation: Rotn dist", camera_rotation_dist(camera_init, target_obs.camera))
-            print("from latentfusion/pose/estimation: Rotn dist degrees", camera_rotation_dist(camera_init, target_obs.camera)*math.pi * 180)
             cameras = pu.sample_cameras_with_estimate(
                 n=self.num_gmm_components * self.num_samples,
                 camera_est=camera_init,
@@ -558,8 +554,6 @@ class GradientPoseEstimator(PoseEstimator):
 
         logger.info('best camera', step=ranking[0][2], loss=ranking[0][1])
         best_cameras = Camera.cat([c for c, loss, step in ranking])
-
-        print("from latentfusion/pose/estimation.py, cameras: \n", best_cameras.extrinsic)
 
         if self.track_stats and self.return_camera_history:
             return best_cameras, stat_history, camera_history
