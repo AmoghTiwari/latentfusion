@@ -1,0 +1,25 @@
+#########
+Initial Error 
+##########
+{'rotation_error': ['169.61'], 'translation_error': ['0.0270'], 'add_error': ['0.0383'], 'add_sym_error': ['0.0373'], 'add_s_error': ['0.0124'], 'proj2d_error': ['31.88']}
+
+#########
+Post Estimation 
+##########
+{'rotation_error': ['170.98', '176.54'], 'translation_error': ['0.0334', '0.0223'], 'add_error': ['0.0475', '0.0415'], 'add_sym_error': ['0.0451', '0.0365'], 'add_s_error': ['0.0174', '0.0089'], 'proj2d_error': ['46.31', '42.89']}
+
+{'rotation_error': ['172.23', '176.55'], 'translation_error': ['0.0222', '0.0226'], 'add_error': ['0.0300', '0.0416'], 'add_sym_error': ['0.0234', '0.0367'], 'add_s_error': ['0.0110', '0.0091'], 'proj2d_error': ['23.22', '42.92']}
+
+{'rotation_error': ['159.80', '176.34'], 'translation_error': ['0.0241', '0.0224'], 'add_error': ['0.0390', '0.0416'], 'add_sym_error': ['0.0379', '0.0366'], 'add_s_error': ['0.0106', '0.0091'], 'proj2d_error': ['35.14', '42.80']}
+
+{'rotation_error': ['176.49', '176.33'], 'translation_error': ['0.0274', '0.0227'], 'add_error': ['0.0336', '0.0418'], 'add_sym_error': ['0.0289', '0.0368'], 'add_s_error': ['0.0148', '0.0093'], 'proj2d_error': ['25.38', '42.90']}
+
+{'rotation_error': ['93.16', '176.39'], 'translation_error': ['0.0321', '0.0220'], 'add_error': ['0.0356', '0.0414'], 'add_sym_error': ['0.0348', '0.0363'], 'add_s_error': ['0.0197', '0.0088'], 'proj2d_error': ['29.93', '42.73']}
+
+{'rotation_error': ['175.69', '176.42'], 'translation_error': ['0.0275', '0.0219'], 'add_error': ['0.0408', '0.0414'], 'add_sym_error': ['0.0408', '0.0362'], 'add_s_error': ['0.0126', '0.0087'], 'proj2d_error': ['38.74', '42.74']}
+
+{'rotation_error': ['174.24', '176.51'], 'translation_error': ['0.0306', '0.0221'], 'add_error': ['0.0445', '0.0414'], 'add_sym_error': ['0.0435', '0.0364'], 'add_s_error': ['0.0192', '0.0088'], 'proj2d_error': ['45.76', '42.85']}
+
+{'rotation_error': ['9.89', '176.56'], 'translation_error': ['0.0414', '0.0228'], 'add_error': ['0.0414', '0.0417'], 'add_sym_error': ['0.0414', '0.0368'], 'add_s_error': ['0.0246', '0.0092'], 'proj2d_error': ['22.83', '42.93']}
+
+

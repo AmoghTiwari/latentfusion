@@ -1,0 +1,11 @@
+Coarse:
+	Time Taken: 8.743655
+	Max Num Iterations: 10
+	Num Samples: 8
+Fine:
+	Time Taken: 11.311925
+	Max Num Iterations: 100
+	Num Samples: 8
+Latent Object:
+	Build Time: 0.415678 seconds
+	Num Input Views: 8

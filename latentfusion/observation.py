@@ -74,6 +74,7 @@ class Observation(object):
     def from_dataset(cls, dataset, inds=None):
         if inds is None:
             inds = torch.arange(len(dataset))
+        print("from latentfusion/observation.py; indices", inds)
         loader = torchutils.IndexedDataLoader(
             dataset, shuffle=False, indices=inds, batch_size=len(inds), num_workers=0)
         return cls.from_dict(next(iter(loader)))

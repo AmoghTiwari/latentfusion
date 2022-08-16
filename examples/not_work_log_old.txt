@@ -1,0 +1,16 @@
+Didn't work for black_drillquick_quick
+Didn't work for black_drilllatent_quick
+Didn't work for duster slow_slow
+Didn't work for graphics_card slow_slow
+Didn't work for orange_drill slow_slow
+Didn't work for pouch slow_slow
+Didn't work for remote slow_slow
+Didn't work for black_drill quick_quick
+Didn't work for cheezit quick_quick
+Didn't work for duplo_dude quick_quick
+Didn't work for black_drill latent_quick
+Didn't work for cheezit latent_quick
+Didn't work for duplo_dude latent_quick
+Didn't work for black_drill latent_slow
+Didn't work for cheezit latent_slow
+Didn't work for duplo_dude latent_slow

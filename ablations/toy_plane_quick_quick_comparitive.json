@@ -1,0 +1,34 @@
+{
+    "object_name": "toy_plane",
+    "experiment_name": "quick_quick",
+    "rotation_error (deg)": {
+        "initial": 29.75,
+        "coarse_avg": 127.7325,
+        "fine_avg": 29.387500000000003
+    },
+    "translation_error (m)": {
+        "initial": 0.0623,
+        "coarse_avg": 0.05605,
+        "fine_avg": 0.047
+    },
+    "add_error (m)": {
+        "initial": 0.0634,
+        "coarse_avg": 0.0703125,
+        "fine_avg": 0.048337500000000005
+    },
+    "add_sym_error (m)": {
+        "initial": 0.0634,
+        "coarse_avg": 0.067,
+        "fine_avg": 0.048337500000000005
+    },
+    "add_s_error (m)": {
+        "initial": 0.0288,
+        "coarse_avg": 0.024862500000000003,
+        "fine_avg": 0.0165375
+    },
+    "proj2d_error (px)": {
+        "initial": 18.38,
+        "coarse_avg": 41.335,
+        "fine_avg": 47.59
+    }
+}

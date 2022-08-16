@@ -1,0 +1,34 @@
+{
+    "object_name": "remote",
+    "experiment_name": "quick_quick",
+    "rotation_error (deg)": {
+        "initial": 146.9,
+        "coarse_avg": 134.03875,
+        "fine_avg": 154.29375
+    },
+    "translation_error (m)": {
+        "initial": 0.0141,
+        "coarse_avg": 0.012424999999999999,
+        "fine_avg": 0.0130375
+    },
+    "add_error (m)": {
+        "initial": 0.017,
+        "coarse_avg": 0.014725000000000002,
+        "fine_avg": 0.0134
+    },
+    "add_sym_error (m)": {
+        "initial": 0.0144,
+        "coarse_avg": 0.013225,
+        "fine_avg": 0.0134
+    },
+    "add_s_error (m)": {
+        "initial": 0.0122,
+        "coarse_avg": 0.008387499999999999,
+        "fine_avg": 0.006175
+    },
+    "proj2d_error (px)": {
+        "initial": 19.33,
+        "coarse_avg": 15.765,
+        "fine_avg": 18.04
+    }
+}

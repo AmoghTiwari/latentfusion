@@ -1,0 +1,34 @@
+{
+    "object_name": "duster",
+    "experiment_name": "quick_quick",
+    "rotation_error (deg)": {
+        "initial": 172.97,
+        "coarse_avg": 149.43,
+        "fine_avg": 163.4925
+    },
+    "translation_error (m)": {
+        "initial": 0.0444,
+        "coarse_avg": 0.038887500000000005,
+        "fine_avg": 0.0324875
+    },
+    "add_error (m)": {
+        "initial": 0.0463,
+        "coarse_avg": 0.041237499999999996,
+        "fine_avg": 0.034875
+    },
+    "add_sym_error (m)": {
+        "initial": 0.046,
+        "coarse_avg": 0.0404375,
+        "fine_avg": 0.034875
+    },
+    "add_s_error (m)": {
+        "initial": 0.0265,
+        "coarse_avg": 0.023100000000000002,
+        "fine_avg": 0.020387500000000003
+    },
+    "proj2d_error (px)": {
+        "initial": 12.52,
+        "coarse_avg": 11.6875,
+        "fine_avg": 10.48375
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "object_name": "graphics_card",
+    "experiment_name": "latent_slow",
+    "rotation_error (deg)": {
+        "initial": 108.32,
+        "coarse_avg": 151.00875,
+        "fine_avg": 40.185
+    },
+    "translation_error (m)": {
+        "initial": 0.0529,
+        "coarse_avg": 0.054237499999999994,
+        "fine_avg": 0.0524375
+    },
+    "add_error (m)": {
+        "initial": 0.053,
+        "coarse_avg": 0.055912500000000004,
+        "fine_avg": 0.052675
+    },
+    "add_sym_error (m)": {
+        "initial": 0.053,
+        "coarse_avg": 0.0551875,
+        "fine_avg": 0.052675
+    },
+    "add_s_error (m)": {
+        "initial": 0.0434,
+        "coarse_avg": 0.0399,
+        "fine_avg": 0.038474999999999995
+    },
+    "proj2d_error (px)": {
+        "initial": 50.85,
+        "coarse_avg": 52.685,
+        "fine_avg": 51.129999999999995
+    }
+}

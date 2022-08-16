@@ -1,0 +1,34 @@
+{
+    "object_name": "vim_mug",
+    "experiment_name": "quick_quick",
+    "rotation_error (deg)": {
+        "initial": 99.55,
+        "coarse_avg": 130.48875,
+        "fine_avg": 118.91125
+    },
+    "translation_error (m)": {
+        "initial": 0.0275,
+        "coarse_avg": 0.026575,
+        "fine_avg": 0.0187
+    },
+    "add_error (m)": {
+        "initial": 0.0286,
+        "coarse_avg": 0.0283375,
+        "fine_avg": 0.021650000000000003
+    },
+    "add_sym_error (m)": {
+        "initial": 0.0286,
+        "coarse_avg": 0.027999999999999997,
+        "fine_avg": 0.0211625
+    },
+    "add_s_error (m)": {
+        "initial": 0.0198,
+        "coarse_avg": 0.018500000000000003,
+        "fine_avg": 0.0112125
+    },
+    "proj2d_error (px)": {
+        "initial": 17.58,
+        "coarse_avg": 17.195,
+        "fine_avg": 11.763749999999998
+    }
+}

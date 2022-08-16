@@ -332,6 +332,7 @@ class CrossEntropyPoseEstimator(PoseEstimator):
             camera_init = kwargs['cameras'][0]
         else:
             camera_init = self.initial_pose(target_obs)
+            print("init camera: ", camera_init)
             cameras = pu.sample_cameras_with_estimate(
                 n=self.num_gmm_components * self.num_samples,
                 camera_est=camera_init,
@@ -367,7 +368,7 @@ class CrossEntropyPoseEstimator(PoseEstimator):
         if self.return_camera_history:
             return cameras, camera_history
         else:
-            return cameras
+            return camera_init, cameras
 
     def _refine_pose(self, z_obj, target_obs, prev_gmm, gmm, num_elites, camera_init):
         # Sample from blended distribution and then set current distribution to

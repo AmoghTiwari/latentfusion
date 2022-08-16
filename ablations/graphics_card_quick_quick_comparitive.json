@@ -1,0 +1,34 @@
+{
+    "object_name": "graphics_card",
+    "experiment_name": "quick_quick",
+    "rotation_error (deg)": {
+        "initial": 108.32,
+        "coarse_avg": 66.08875,
+        "fine_avg": 19.299999999999997
+    },
+    "translation_error (m)": {
+        "initial": 0.0523,
+        "coarse_avg": 0.05161249999999999,
+        "fine_avg": 0.0574625
+    },
+    "add_error (m)": {
+        "initial": 0.0525,
+        "coarse_avg": 0.0522625,
+        "fine_avg": 0.0575
+    },
+    "add_sym_error (m)": {
+        "initial": 0.0525,
+        "coarse_avg": 0.051925,
+        "fine_avg": 0.0575
+    },
+    "add_s_error (m)": {
+        "initial": 0.0427,
+        "coarse_avg": 0.0403,
+        "fine_avg": 0.0446875
+    },
+    "proj2d_error (px)": {
+        "initial": 49.15,
+        "coarse_avg": 49.18375,
+        "fine_avg": 55.8625
+    }
+}

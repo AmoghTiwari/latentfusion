@@ -22,6 +22,24 @@ def metrics_table(metrics, tablefmt='github'):
 
 
 def metrics_table_multiple(metrics_list, headers, tablefmt='github'):
+    rotation_error = []
+    translation_error = []
+    add_error = []
+    add_sym_error = []
+    add_s_error = []
+    proj2d_error = []
+    
+    for i,m in enumerate(metrics_list):
+        rotation_error.append(format_rotation_err(m['rotation_dist']))
+        translation_error.append(format_translation_err(m['translation_dist']))
+        add_error.append(format_point_add(m['add']))
+        add_sym_error.append(format_point_add(m['add_sym']))
+        add_s_error.append(format_point_add(m['add_s']))
+        proj2d_error.append(format_point_proj2d(m['proj2d']))
+
+    errors_dict = {"rotation_error": rotation_error, "translation_error": translation_error, 
+    "add_error": add_error, "add_sym_error": add_sym_error, "add_s_error": add_s_error, "proj2d_error": proj2d_error}
+    
     table = [
         [
             headers[i],
@@ -44,24 +62,24 @@ def metrics_table_multiple(metrics_list, headers, tablefmt='github'):
             'ADD-S',
             'Proj2D',
         ],
-        tablefmt=tablefmt)
+        tablefmt=tablefmt), errors_dict
 
 
 def format_rotation_err(rotation):
     rotation = rotation / math.pi * 180
-    return f"{rotation:.02f}°"
+    return f"{rotation:.02f}"
 
 
 def format_translation_err(translation):
-    return f"{translation:.04f} m"
+    return f"{translation:.04f}"
 
 
 def format_point_add(add):
-    return f"{add:.04f} m"
+    return f"{add:.04f}"
 
 
 def format_point_proj2d(proj2d):
-    return f"{proj2d:.02f} px"
+    return f"{proj2d:.02f}"
 
 
 def metrics_summary_table(metrics, tablefmt='github'):

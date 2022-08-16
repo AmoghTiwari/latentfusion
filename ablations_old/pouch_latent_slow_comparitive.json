@@ -1,0 +1,34 @@
+{
+    "object_name": "pouch",
+    "experiment_name": "latent_slow",
+    "rotation_error (deg)": {
+        "initial": 169.61,
+        "coarse_avg": 40.655,
+        "fine_avg": 172.7175
+    },
+    "translation_error (m)": {
+        "initial": 0.0275,
+        "coarse_avg": 0.0317375,
+        "fine_avg": 0.0167
+    },
+    "add_error (m)": {
+        "initial": 0.0385,
+        "coarse_avg": 0.033687499999999995,
+        "fine_avg": 0.0389
+    },
+    "add_sym_error (m)": {
+        "initial": 0.0373,
+        "coarse_avg": 0.0330125,
+        "fine_avg": 0.0332
+    },
+    "add_s_error (m)": {
+        "initial": 0.012,
+        "coarse_avg": 0.0154625,
+        "fine_avg": 0.0051
+    },
+    "proj2d_error (px)": {
+        "initial": 30.54,
+        "coarse_avg": 26.021250000000002,
+        "fine_avg": 41.917500000000004
+    }
+}

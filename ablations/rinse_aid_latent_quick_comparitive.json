@@ -1,0 +1,34 @@
+{
+    "object_name": "rinse_aid",
+    "experiment_name": "latent_quick",
+    "rotation_error (deg)": {
+        "initial": 123.4,
+        "coarse_avg": 144.485,
+        "fine_avg": 173.03125
+    },
+    "translation_error (m)": {
+        "initial": 0.0222,
+        "coarse_avg": 0.021312499999999998,
+        "fine_avg": 0.024087499999999998
+    },
+    "add_error (m)": {
+        "initial": 0.0238,
+        "coarse_avg": 0.0244625,
+        "fine_avg": 0.024825
+    },
+    "add_sym_error (m)": {
+        "initial": 0.0237,
+        "coarse_avg": 0.0244625,
+        "fine_avg": 0.024800000000000003
+    },
+    "add_s_error (m)": {
+        "initial": 0.01,
+        "coarse_avg": 0.011362500000000001,
+        "fine_avg": 0.0167
+    },
+    "proj2d_error (px)": {
+        "initial": 18.74,
+        "coarse_avg": 20.168750000000003,
+        "fine_avg": 26.19875
+    }
+}

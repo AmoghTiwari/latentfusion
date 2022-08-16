@@ -1,0 +1,34 @@
+{
+    "object_name": "orange_drill",
+    "experiment_name": "latent_slow",
+    "rotation_error (deg)": {
+        "initial": 127.58,
+        "coarse_avg": 107.61999999999999,
+        "fine_avg": 7.852499999999999
+    },
+    "translation_error (m)": {
+        "initial": 0.0298,
+        "coarse_avg": 0.0421875,
+        "fine_avg": 0.0120875
+    },
+    "add_error (m)": {
+        "initial": 0.0387,
+        "coarse_avg": 0.0450125,
+        "fine_avg": 0.0122
+    },
+    "add_sym_error (m)": {
+        "initial": 0.0352,
+        "coarse_avg": 0.044075,
+        "fine_avg": 0.0122
+    },
+    "add_s_error (m)": {
+        "initial": 0.0255,
+        "coarse_avg": 0.0269125,
+        "fine_avg": 0.00745
+    },
+    "proj2d_error (px)": {
+        "initial": 21.29,
+        "coarse_avg": 24.545,
+        "fine_avg": 5.72625
+    }
+}
