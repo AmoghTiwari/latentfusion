@@ -368,7 +368,7 @@ class CrossEntropyPoseEstimator(PoseEstimator):
         if self.return_camera_history:
             return cameras, camera_history
         else:
-            return camera_init, cameras
+            return  cameras
 
     def _refine_pose(self, z_obj, target_obs, prev_gmm, gmm, num_elites, camera_init):
         # Sample from blended distribution and then set current distribution to
